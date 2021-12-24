@@ -25,8 +25,7 @@ public class StarfuryStarRenderer extends EntityRenderer<StarfuryStarEntity> {
     @Override
     public void render(StarfuryStarEntity entity, float entityYaw, float partialTicks, MatrixStack matrix, IRenderTypeBuffer buffer, int packedLight) {
         matrix.pushPose();
-
-        model.setupAnim(entity, 0, 0, 0, 0, 0);
+        //Do something
         matrix.popPose();
         super.render(entity, entityYaw, partialTicks, matrix, buffer, packedLight);
     }
