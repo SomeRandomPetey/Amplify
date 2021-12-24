@@ -3,17 +3,17 @@ package com.petey.amplify.entity.starfury;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.projectile.ProjectileEntity;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.IPacket;
 import net.minecraft.world.World;
 
-public class StarfuryStarEntity extends Entity {
+public class StarfuryStarEntity extends ProjectileEntity {
 
 
-    public StarfuryStarEntity(EntityType<?> entityType, World worldIn) {
+    public StarfuryStarEntity(EntityType<? extends ProjectileEntity> entityType, World worldIn) {
         super(entityType, worldIn);
     }
-
 
     @Override
     protected void defineSynchedData() {
@@ -34,4 +34,6 @@ public class StarfuryStarEntity extends Entity {
     public IPacket<?> getAddEntityPacket() {
         return null;
     }
+
+
 }
