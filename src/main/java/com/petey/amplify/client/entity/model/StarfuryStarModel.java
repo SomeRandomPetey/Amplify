@@ -1,4 +1,4 @@
-package com.petey.amplify.entity.starfury;
+package com.petey.amplify.client.entity.model;
 
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.vertex.IVertexBuilder;

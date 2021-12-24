@@ -1,5 +1,6 @@
-package com.petey.amplify.entity.starfury;
+package com.petey.amplify.client.entity;
 
+import com.petey.amplify.entity.starfury.StarfuryStarEntity;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererManager;
@@ -10,12 +11,11 @@ import net.minecraft.util.math.BlockPos;
 public class StarfuryStarRenderer extends EntityRenderer<StarfuryStarEntity> {
 
     private static final ResourceLocation TEXTURE_LOCATION = new ResourceLocation("textures/entity/starfury_star.png");
-    private static final RenderType RENDER_TYPE = RenderType.entityTranslucent(TEXTURE_LOCATION);
-    private final ShulkerBulletModel<StarfuryStarEntity> model = new ShulkerBulletModel<>();
+    private final ShulkerBulletModel<StarfuryStarEntity> MODEL = new ShulkerBulletModel<>();
 
 
-    public StarfuryStarRenderer(EntityRendererManager p_i46179_1_) {
-        super(p_i46179_1_);
+    public StarfuryStarRenderer(EntityRendererManager erm) {
+        super(erm);
     }
 
     public int getBlockLightLevel(StarfuryStarEntity pEntity, BlockPos pPos) {
