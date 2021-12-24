@@ -9,7 +9,6 @@ import net.minecraft.world.World;
 
 public class StarfuryStarEntity extends Entity {
 
-    private int age;
 
     public StarfuryStarEntity(EntityType<?> entityType, World worldIn) {
         super(entityType, worldIn);

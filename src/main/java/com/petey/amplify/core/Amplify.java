@@ -65,7 +65,7 @@ public class Amplify {
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
-        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.STARFURY_STAR.get(), StarfuryStarRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(Registry.STARFURY_STAR.get(), StarfuryStarRenderer::new);
 
         event.enqueueWork(() -> {
 
