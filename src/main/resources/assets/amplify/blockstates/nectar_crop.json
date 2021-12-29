@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "amplify:block/nectar_crop/nectar_stage0"
+    },
+    "age=1": {
+      "model": "amplify:block/nectar_crop/nectar_stage1"
+    },
+    "age=2": {
+      "model": "amplify:block/nectar_crop/nectar_stage2"
+    },
+    "age=3": {
+      "model": "amplify:block/nectar_crop/nectar_stage3"
+    },
+    "age=4": {
+      "model": "amplify:block/nectar_crop/nectar_stage4"
+    },
+    "age=5": {
+      "model": "amplify:block/nectar_crop/nectar_stage5"
+    },
+    "age=6": {
+      "model": "amplify:block/nectar_crop/nectar_stage6"
+    },
+    "age=7": {
+      "model": "amplify:block/nectar_crop/nectar_stage7"
+    }
+  }
+}

@@ -1,8 +1,9 @@
 package com.petey.amplify.core;
 
-import com.petey.amplify.client.entity.StarfuryStarRenderer;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -52,7 +53,8 @@ public class Amplify {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        Registry.register();
+        ModBlocks.register(eventBus);
+        ModItems.register(eventBus);
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -65,10 +67,10 @@ public class Amplify {
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().options);
-        RenderingRegistry.registerEntityRenderingHandler(Registry.STARFURY_STAR.get(), StarfuryStarRenderer::new);
 
         event.enqueueWork(() -> {
 
+            RenderTypeLookup.setRenderLayer(ModBlocks.NECTAR.get(), RenderType.cutout());
         });
 
 

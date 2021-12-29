@@ -18,9 +18,13 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         builder(itemGenerated, "glass_sword");
         builder(itemGenerated, "starfury");
+        builder(itemGenerated,"nectar_seeds");
+        builder(itemGenerated,"nectar");
+
     }
 
     private ItemModelBuilder builder(ModelFile itemGenerated, String name) {
         return getBuilder(name).parent(itemGenerated).texture("layer0", "item/" + name);
     }
+
 }

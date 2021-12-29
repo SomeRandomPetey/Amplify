@@ -1,2 +1,5 @@
 537e36338b33ac975e122909de16297525bd2c05 assets/amplify/models/item/glass_sword.json
+d75ab8d0d56ca087033eb2eb827afa88a857f23f assets/amplify/models/item/nectar.json
+07faa794574be3a50c1d019fbed379d730434349 assets/amplify/models/item/nectar_seeds.json
 a47ae7e384aa69783b028d796f0317fe7711b6da assets/amplify/models/item/starfury.json
+009ed5bd7d48fbd6996e651598e662ef84ba93ab data/amplify/loot_tables/blocks/nectar_crop.json

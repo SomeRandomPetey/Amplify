@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/stem_growth2",
+  "textures": {
+    "stem": "amplify:block/nectar_stem0"
+  }
+}
